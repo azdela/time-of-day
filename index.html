@@ -109,10 +109,11 @@ if (myHour < 12 && myHour >= 5) {
 	myColor = "purple";
 	img.src = "images/night.jpg";
 }
+var full = myYear.concat(" All Rights Reserved");
 
 document.getElementById("image").src = img;
 document.getElementById("mydiv").innerHTML = myGreeting;
-document.getElementById("footer").innerHTML = myYear;
+document.getElementById("footer").innerHTML = full;
 document.body.style.backgroundColor = myColor;
 </script>
 </body>
