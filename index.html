@@ -93,7 +93,7 @@ let myColor = "";
 
 if (myHour < 12 && myHour >= 5) {
   	myGreeting = "Good Morning!";
- 	 myColor = "yellow";
+ 	myColor = "yellow";
 } else if (myHour > 12 && myHour <= 18) {
   	myGreeting = "Afternoon!";
   	myColor = "orange";
@@ -106,7 +106,7 @@ if (myHour < 12 && myHour >= 5) {
 }
 
 document.getElementById("mydiv").innerHTML = myGreeting;
-document.getElementById("footer").innerHTML = "&copy; 2013-" + myYear + " All Rights Reserved";
+document.getElementById("footer").innerHTML = myYear;
 document.body.style.backgroundColor = myColor;
 </script>
 </body>
