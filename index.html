@@ -90,24 +90,24 @@ let myHour = myDate.getHours();
 let myYear = myDate.getFullYear();
 let myGreeting ="";
 let myColor = "";
-let img = document.createElement("img");
+let img = "images/";
 
 if (myHour < 12 && myHour >= 5) {
   	myGreeting = "Good Morning!";
 	myColor = "yellow";
-	img.src = "images/morning.jpg"; 
+	img += "morning.jpg"; 
 } else if (myHour > 12 && myHour <= 18) {
   	myGreeting = "Afternoon!";
 	myColor = "orange";
-	img.src = "images/afternoon.jpg";  
+	img = "afternoon.jpg";  
 } else if (myHour > 18 && myHour <= 23) {
 	myGreeting = "Good Evening!";
 	myColor = "blue";
-	img.src = "images/evening.jpg";
+	img = "evening.jpg";
 } else {
 	myGreeting = "Goodnight!";
 	myColor = "purple";
-	img.src = "images/night.jpg";
+	img = "night.jpg";
 }
 
 document.getElementById("image").src = img;
