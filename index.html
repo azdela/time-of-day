@@ -95,19 +95,19 @@ var img = document.createElement("img");
 if (myHour < 12 && myHour >= 5) {
   	myGreeting = "Good Morning!";
 	myColor = "yellow";
-	img.src = "/images/morning.jpg"; 
+	img.src = "images/morning.jpg"; 
 } else if (myHour > 12 && myHour <= 18) {
   	myGreeting = "Afternoon!";
 	myColor = "orange";
-	img.src = "/images/afternoon.jpg";  
+	img.src = "images/afternoon.jpg";  
 } else if (myHour > 18 && myHour <= 23) {
 	myGreeting = "Good Evening!";
 	myColor = "blue";
-	img.src = "/images/evening.jpg";
+	img.src = "images/evening.jpg";
 } else {
 	myGreeting = "Goodnight!";
 	myColor = "purple";
-	img.src = "/images/night.jpg";
+	img.src = "images/night.jpg";
 }
 
 document.getElementById("image").src = img;
