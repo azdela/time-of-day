@@ -78,7 +78,7 @@
 	  <img src="http://dummyimage.com/300x400" alt="Picture of Me!" class="flexible" />
      </main>
     <footer>
-      <small>&copy; 2013, All Rights Reserved ~
+      <small id = "footer">&copy; 2013, All Rights Reserved ~
       <a href="https://validator.w3.org/check/referer" target="_blank">Valid HTML</a> ~
       <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank">Valid CSS</a>
       </small>
@@ -86,19 +86,21 @@
 	<!-- END Footer -->
 <script>
 let myDate = new Date();
-let myHour = myDate.getHours();
+let myHour = myDate.getHours();.
+let myYear = myDate.getFullYear();
 let myGreeting ="";
 let myColor = "";
 
-if (myHour > 12) {
-  myGreeting = "Good afternoon!";
-  myColor = "orange";
+if (myHour < 12 && myHour >= 5) {
+  myGreeting = "Good Morning!";
+  myColor = "yellow";
 }
 else {
   myGreeting = "Good morning?";
 }
 
 document.getElementById("mydiv").innerHTML = myGreeting;
+document.getElementById("footer").innerHTML = "&copy; 2013-" + myYear + " All Rights Reserved";
 document.body.style.backgroundColor = myColor;
 </script>
 </body>
