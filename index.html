@@ -99,15 +99,15 @@ if (myHour < 12 && myHour >= 5) {
 } else if (myHour > 12 && myHour <= 18) {
   	myGreeting = "Afternoon!";
 	myColor = "orange";
-	img = "afternoon.jpg";  
+	img += "afternoon.jpg";  
 } else if (myHour > 18 && myHour <= 23) {
 	myGreeting = "Good Evening!";
 	myColor = "blue";
-	img = "evening.jpg";
+	img += "evening.jpg";
 } else {
 	myGreeting = "Goodnight!";
 	myColor = "purple";
-	img = "night.jpg";
+	img += "night.jpg";
 }
 
 document.getElementById("image").src = img;
